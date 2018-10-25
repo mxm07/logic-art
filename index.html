@@ -9,11 +9,10 @@
     </head>
     <body>
         <div id="sidebar">
+            <img src="logo.png" width="220" height="44"><br/>
             <label>expression</label>
             <input id="input" type="text">
             <button id="submit">Go</button>
-            <div id="loader"></div>
-            <br/>
             <section>
                 <label style="margin-right: 10px;">magnitude</label>
                 <input id="sizeslider" type="range" min="1" max="10" value="1">
@@ -37,11 +36,12 @@
             <br />
             <h3>how to use</h3>
             <p>
-                asd<br/>
-                test<br/>
-                test<br/>
-                test<br/>
-
+                - enter a logical expression in the box above, choose a magnitude, and click go.<br/>
+                - inputs consist of a combination of letters, logical operators, and parentheses<br/>
+                - valid operators: & (and), | (or), ! (not), ^ (xor)<br/>
+                - example: A & (B | !C ^ D)<br/>
+                - magnitude refers to the number of variables to filter the expression through. a magnitude of n results in a 2^n-1 x 2^n-1 grid<br/>
+                - inputted variables do not correspond 1 to 1 with variables shown on the grid. Z & N will display the same output as A & B.
             </p>
         </div>
         <div id="main">

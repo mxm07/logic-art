@@ -64,7 +64,7 @@ label, p, h2, h3 {
     font-family: sans-serif;
 }
 label { font-size: 1em; color: #aaa; }
-p { font-size: 1.25em; color: #ccc; }
+p { font-size: 1em; color: #ccc; }
 
 h2, h3 {
     color: #fff;
