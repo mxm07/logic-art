@@ -233,7 +233,7 @@ const eval_expr = (postfix, values) => {
     let valuemap = {};
     for (let token of postfix) {
         if (validOperators.indexOf(token) > -1) {
-            if (token === '~') {
+            if (token === '~' || token === '!') {
                 let r = stack.pop();
                 if (!parseInt(r)) {
                     const s = (values.length > 0 ? values.shift() : 0) === 0 ? 1 : 0;
