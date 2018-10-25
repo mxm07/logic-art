@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div id="sidebar">
+            <label>expression</label>
+            <input id="input" type="text">
+            <button id="submit">Go</button>
+            <div id="loader"></div>
+            <br/>
+            <section>
+                <label style="margin-right: 10px;">magnitude</label>
+                <input id="sizeslider" type="range" min="1" max="10" value="1">
+                <label id="sizelabel">2</label> <br/>        
+            </section>
+            <label>color for 0 values</label> <input type="color" id="color1"> <br/>
+            <label>color for 1 values</label> <input type="color" id="color2"> <br/>
+
+            <br />
+            <h3>output</h3>
+            <section style="margin-left: 10px;">
+                <label>pixels per cell</label>
+                <input id="ppcslider" type="range" min="1" max="10" value="1">
+                <label id="ppclabel">1</label>  
+                
+                <br />
+                <button id="outputbtn_png">png</button>
+                <button id="outputbtn_jpg">jpg</button>        
+            </section>
+            
+            <br />
+            <h3>how to use</h3>
+            <p>
+                asd<br/>
+                test<br/>
+                test<br/>
+                test<br/>
+
+            </p>
+        </div>
+        <div id="main">
+            <h2 id="value_display"></h2>
+            <canvas id="canvas"></canvas>
+        </div>
+        <script src="logicart.js"></script>
+    </body>
+</html>
